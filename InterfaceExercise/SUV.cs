@@ -14,10 +14,8 @@ namespace InterfaceExercise
         }
 
         //SUV Properties
-        public string HornNoise { get; set; } = "Vroom!";
+        public string HornNoise { get; set; } = "BlAAP!";
         public bool HasLiftDoor { get; set; } = true;
-
-        public string Make { get; set; } 
 
         //ICompany properties
         public string CompanyName { get ; set ; }
@@ -26,8 +24,8 @@ namespace InterfaceExercise
         //IVehicle properties
         public int NumberOfWheels { get ; set ; }
         public int NumberOfSteeringWheels { get ; set ; }
-        public bool HasBumper { get ; set ; }
         public string ModelName { get; set; }
+        public string Make { get; set; }
 
     }
 }

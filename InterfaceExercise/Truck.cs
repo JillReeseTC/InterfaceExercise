@@ -13,16 +13,18 @@ namespace InterfaceExercise
         
         }
         //Truck class members
-        public string HornNoise { get; set; } = "VROOM!";
+        public string HornNoise { get; set; } = "GETOUTOFMYWAY!";
         public bool HasTruckBed { get; set; } = true;
 
         //ICompany class members
         public string CompanyName { get ; set ; }
         public bool HasLogo { get ; set ; }
+
+        //IVehicle class members
         public int NumberOfWheels { get ; set ; }
         public int NumberOfSteeringWheels { get ; set ; }
-        public bool HasBumper { get ; set ; }
-        public bool HasHorn { get ; set ; }
         public string ModelName { get; set; }
+        public string Make { get; set; }
+
     }
 }

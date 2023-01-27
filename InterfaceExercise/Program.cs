@@ -11,25 +11,23 @@ namespace InterfaceExercise
         static void Main(string[] args)
         {
             List<IVehicle> vehicleList = new List<IVehicle>();
+
             int carcount = 0;
             int suvCount = 0;
             int truckCount = 0;
 
             List<Car> cars = new List<Car>();
-            SUV[] suvs = new SUV[10];
-            Truck[] trucks = new Truck[10];
+            
             List<ICompany> companyList = new List<ICompany>();
 
             Car corolla = new Car()
             {
-                HasTrunk = true,
                 IsPlugInElectric = false,
                 Make = "Toyota",
                 CompanyName = "Joe's Graphics",
                 HasLogo = true,
                 NumberOfWheels = 4,
-                NumberOfSteeringWheels = 1,
-                HasBumper= true,
+                NumberOfSteeringWheels = 1,               
                 ModelName = "Corolla"
             };
             
@@ -40,13 +38,11 @@ namespace InterfaceExercise
 
             Car prius = new Car();
             prius.CompanyName = "Creative Cookies";
-            prius.HasLogo = false;
-            prius.HasTrunk = true;
+            prius.HasLogo = false;          
             prius.IsPlugInElectric = true;
             prius.Make = "Toyota";
             prius.NumberOfWheels = 4;
-            prius.NumberOfSteeringWheels = 1;
-            prius.HasBumper = true;
+            prius.NumberOfSteeringWheels = 1;            
             prius.ModelName = "Prius";
 
             vehicleList.Add(prius);
