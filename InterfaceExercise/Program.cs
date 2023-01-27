@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Reflection;
 
 
@@ -59,13 +60,13 @@ namespace InterfaceExercise
                 Console.WriteLine($"{item.ModelName} is a {vehicleType}");
                 if (vehicleType == "Car")
                 {
-                    carMake = item.ModelName.ToLower();
-                    int arrayCount = 0;
-                    foreach (var counter in cars)
-                    {
-                        Console.WriteLine($"{counter.Make} {item.ModelName}");
-                    }
-                   
+                    //carMake = item.ModelName.ToLower();
+                    //int arrayCount = 0;
+                    //foreach (var counter in cars)
+                    //{
+                    //    Console.WriteLine($"{counter.Make} {item.ModelName}");
+                    //}
+                    Console.WriteLine($"{item.Make} {item.ModelName}");
                 }
 
 
