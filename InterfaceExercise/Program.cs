@@ -52,21 +52,29 @@ namespace InterfaceExercise
             companyList.Add(prius);
 
 
-
-            foreach (var item in vehicleList) 
-            {   
+            //vehicles.OfType<Car>() filters for the car types. can be used in foreach to get car or other vehicle trick
+            foreach (var item in vehicleList)
+            {
                 string vehicleType = item.GetType().Name;
                 string carMake = "";
-                Console.WriteLine($"{item.ModelName} is a {vehicleType}");
+                Console.Write($"{item.ModelName} is a {vehicleType} and has {item.NumberOfWheels} wheels and");
+                Console.WriteLine($" {item.NumberOfSteeringWheels} steering wheel.");
+               // var logoHave = (item.HasLogo) ? "does" : "does Not";
+               // carMake = item.ModelName.ToLower();
+               // Console.WriteLine($"The car belongs to {carMake.CompanyName}");
+
                 if (vehicleType == "Car")
                 {
                     //carMake = item.ModelName.ToLower();
                     //int arrayCount = 0;
-                    //foreach (var counter in cars)
-                    //{
-                    //    Console.WriteLine($"{counter.Make} {item.ModelName}");
-                    //}
-                    Console.WriteLine($"{item.Make} {item.ModelName}");
+                    foreach (var counter in cars)
+                    {
+                        Console.Write($"{item.Make} {item.ModelName}");
+                        var electricHave = (counter.IsPlugInElectric) ? "does" : "does Not";
+                        Console.WriteLine($" {electricHave} have plug-in electric.");
+
+                    }
+                    
                 }
 
 
