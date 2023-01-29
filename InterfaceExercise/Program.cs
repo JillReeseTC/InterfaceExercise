@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Reflection;
-
+using System.Runtime.CompilerServices;
 
 namespace InterfaceExercise
 {
@@ -125,6 +125,8 @@ namespace InterfaceExercise
                 var electricHave = (veh.IsPlugInElectric) ? "does" : "does Not";
                 Console.Write($" {electricHave} have plug-in electric,");
                 Console.WriteLine($" and the horn noise is {veh.HornNoise}");
+                var logo = (veh.HasLogo) ? "does" : "does Not";
+                Console.WriteLine($"The car is owned by {veh.CompanyName} and {logo} have a logo on the vehicle. ");
                 Console.WriteLine();
             }
 
@@ -135,6 +137,8 @@ namespace InterfaceExercise
                 var liftDoor = (veh.HasLiftDoor) ? "does" : "does Not";
                 Console.Write($" {liftDoor} have a rear lift door,");
                 Console.WriteLine($" and the horn noise is {veh.HornNoise}");
+                var logo = (veh.HasLogo) ? "does" : "does Not";
+                Console.WriteLine($"The SUV is owned by {veh.CompanyName} and {logo} have a logo on the vehicle. ");
                 Console.WriteLine();
             }
 
@@ -145,6 +149,8 @@ namespace InterfaceExercise
                 var truckBed = (veh.HasTruckBed) ? "does" : "does Not";
                 Console.Write($" {truckBed} have a truck bed,");
                 Console.WriteLine($" and the horn noise is {veh.HornNoise}");
+                var logo = (veh.HasLogo) ? "does" : "does Not";
+                Console.WriteLine($"The truck is owned by {veh.CompanyName} and {logo} have a logo on the vehicle. ");
                 Console.WriteLine();
             }
 
